@@ -17,7 +17,19 @@
     </div>
     <div class="container body-content">
         @RenderBody()
+
         <hr />
+        @if (TempData["InfoMessage"] != null)
+        {
+            <div class="container">
+                <div class="alert alert-info">
+                    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                    @TempData["InfoMessage"]
+                </div>
+            </div>
+        }
+        <hr />
+
         <footer>
             <p>&copy; @DateTime.Now.Year - cs survey base1</p>
         </footer>

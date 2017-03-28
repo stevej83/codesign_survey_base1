@@ -1,12 +1,17 @@
-﻿@{
+﻿@model SurveyBase1.Models.Survey
+
+@{
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 @{
     ViewBag.Title = "Survey Landing";
+    
 }
+
+<!--A view template should never perform business logic or interact with a database directly-->
+
 <h2>Survey Landing</h2>
 
 <p>Survey Landing - View Template!</p>
 
-<input type="button" value="Continue" onclick="location.href='@Url.Action("Workflow", "Survey")'" />
 
