@@ -23,6 +23,16 @@ namespace SurveyBase1
                 name: "Hello",
                 url: "{controller}/{action}/{name}/{id}"
             );
+
+            routes.MapRoute(
+                name: "Landing",
+                url: "{controller}/{action}"
+            );
+
+            routes.MapRoute(
+                name: "Workflow",
+                url: "{controller}/{action}"
+            );
         }
     }
 }

@@ -1,0 +1,15 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@{
+    ViewBag.Title = "Survey Landing";
+}
+<h2>Survey Base Info Page 1</h2>
+
+<p>Survey - Base Info Page 1</p>
+
+<input type="button" value="Continue" onclick="location.href='@Url.Action("Workflow", "Survey")'" />
+
+<input type="button" value="back" onclick="location.href='@Url.Action("Workflow", "Survey")'" />
+
