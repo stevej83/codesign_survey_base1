@@ -13,7 +13,7 @@ namespace SurveyBase1
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
-            routes.MapRoute(
+            /*routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
@@ -22,11 +22,17 @@ namespace SurveyBase1
             routes.MapRoute(
                 name: "Hello",
                 url: "{controller}/{action}/{name}/{id}"
+            );*/
+
+            routes.MapRoute(
+                name: "Default",
+                url: "{controller}/{action}/{name}/{id}",
+                defaults: new { controller = "Survey", action = "Landing", id = UrlParameter.Optional }
             );
 
             routes.MapRoute(
                 name: "Landing",
-                url: "{controller}/{action}"
+                url: "{controller}/{action}/{name}/{id}"
             );
 
             routes.MapRoute(

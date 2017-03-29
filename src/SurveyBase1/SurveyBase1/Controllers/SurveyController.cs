@@ -16,9 +16,16 @@ namespace SurveyBase1.Controllers
     {
         public ActionResult Landing()
         {
+            Guid guid = Guid.NewGuid();
+            string str = guid.ToString();
+            ViewBag.Message = str;
             return View();
         }
 
+        /*public string Test()
+        {
+            return "Test...";
+        }*/
 
         public ActionResult Workflow()
         {
@@ -29,5 +36,6 @@ namespace SurveyBase1.Controllers
         {
             return View();
         }
+
     }
 }
