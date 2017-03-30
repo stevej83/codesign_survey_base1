@@ -9,7 +9,7 @@ namespace SurveyBase1.Models
     public class User
     {
         [ScaffoldColumn(false)]
-        public int UserID { get; set; }
+        public string UserID { get; set; }
 
         [Required, StringLength(100), Display(Name = "User Name")]
         public string UserName { get; set; }

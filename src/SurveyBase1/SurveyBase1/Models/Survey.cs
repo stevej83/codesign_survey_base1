@@ -9,13 +9,13 @@ namespace SurveyBase1.Models
     public class Survey
     {
         [ScaffoldColumn(false)]
-        public int SurveyID { get; set; }
+        public string SurveyID { get; set; }
 
         [ScaffoldColumn(false)]
-        public int ClientID { get; set; }
+        public string ClientID { get; set; }
 
         [ScaffoldColumn(false)]
-        public int UserID { get; set; }
+        public string UserID { get; set; }
 
         [ScaffoldColumn(false)]
         public DateTime SurveyStart { get; set; }
