@@ -9,15 +9,15 @@ namespace SurveyBase1.Logic
 {
     public class AddSurveys
     {
-        public void AddSurvey(string surveyID, string clientID, string userID)
+        public bool AddSurvey(string surveyID, string clientID, string userID)
         {
             var thisSurvey = new Survey();
             thisSurvey.SurveyID = surveyID;
             thisSurvey.ClientID = clientID;
             thisSurvey.UserID = userID;
             thisSurvey.SurveyStart = DateTime.Now;
-            thisSurvey.SurveyEnd = DateTime.Now;
-            thisSurvey.SurveyLastUpdate = DateTime.Now;
+            thisSurvey.SurveyEnd = DateTime.MinValue;
+            thisSurvey.SurveyLastUpdate = DateTime.MinValue;
             thisSurvey.Q1Ans = "";
             thisSurvey.Q1Pt = 0;
             thisSurvey.Q2Ans = "";
@@ -29,6 +29,9 @@ namespace SurveyBase1.Logic
                 _db.Surveys.Add(thisSurvey);
                 _db.SaveChanges();
             }
+
+            // Success.
+            return true;
         }
     }
 }

@@ -8,11 +8,15 @@ namespace SurveyBase1.Logic
 {
     public class AddGates
     {
-        public void AddGate(string gateID, string surveyID)
+        public bool AddGate(string gateID, string surveyID)
         {
             var thisGate = new Gate();
             thisGate.QuestionGateID = gateID;
             thisGate.SurveyID = surveyID;
+            thisGate.LandingGate1 = true;
+            thisGate.LandingGate2 = false;
+            thisGate.Section1Gate1 = false;
+            thisGate.Section1Gate2 = false;
 
             using (SurveyContext _db = new SurveyContext())
             {
@@ -20,6 +24,9 @@ namespace SurveyBase1.Logic
                 _db.Gates.Add(thisGate);
                 _db.SaveChanges();
             }
+
+            // Success.
+            return true;
         }
     }
 }

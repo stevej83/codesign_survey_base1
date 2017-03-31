@@ -395,8 +395,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Logic\AddGate.cs" />
-    <Compile Include="Logic\AddSurvey.cs" />
+    <Compile Include="Logic\AddGates.cs" />
+    <Compile Include="Logic\AddSurveys.cs" />
+    <Compile Include="Logic\AddUsers.cs" />
     <Compile Include="Models\Gate.cs" />
     <Compile Include="Models\Survey.cs" />
     <Compile Include="Models\SurveyContext.cs" />
