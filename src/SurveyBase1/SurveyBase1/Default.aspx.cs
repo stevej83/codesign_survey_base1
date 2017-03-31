@@ -13,5 +13,10 @@ namespace SurveyBase1
         {
 
         }
+
+        public void initialSurveyDB()
+        {
+       
+        }
     }
 }

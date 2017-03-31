@@ -60,3 +60,7 @@ C:\github\codesign_survey_base1\src\SurveyBase1\SurveyBase1\bin\Microsoft.AI.Web
 C:\github\codesign_survey_base1\src\SurveyBase1\SurveyBase1\obj\Release\SurveyBase1.csprojResolveAssemblyReference.cache
 C:\github\codesign_survey_base1\src\SurveyBase1\SurveyBase1\obj\Release\SurveyBase1.dll
 C:\github\codesign_survey_base1\src\SurveyBase1\SurveyBase1\obj\Release\SurveyBase1.pdb
+C:\github\codesign_survey_base1\src\SurveyBase1\SurveyBase1\bin\EntityFramework.dll
+C:\github\codesign_survey_base1\src\SurveyBase1\SurveyBase1\bin\EntityFramework.SqlServer.dll
+C:\github\codesign_survey_base1\src\SurveyBase1\SurveyBase1\bin\EntityFramework.xml
+C:\github\codesign_survey_base1\src\SurveyBase1\SurveyBase1\bin\EntityFramework.SqlServer.xml
