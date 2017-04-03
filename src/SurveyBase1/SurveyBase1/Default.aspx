@@ -2,13 +2,13 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
-    <div class="jumbotron">
+    <!--div class="jumbotron">
         <h1>ASP.NET TEST</h1>
         <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS, and JavaScript.</p>
         <p><a href="http://www.asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-    </div>
+    </!--div-->
 
-    <div class="row">
+    <!--div class="row">
         <div class="col-md-4">
             <h2>Getting started</h2>
             <p>
@@ -37,6 +37,11 @@
                 <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301950">Learn more &raquo;</a>
             </p>
         </div>
-    </div>
+    </div-->
 
+    <div class="row">
+        <div class="col-md-4">
+            <asp:Button ID="startSurveyButton" runat="server" Text="Start Survey" OnClick="startSurveyButton_Click" CausesValidation="false"/>
+        </div>
+    </div>
 </asp:Content>

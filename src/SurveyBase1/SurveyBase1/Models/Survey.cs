@@ -8,6 +8,7 @@ namespace SurveyBase1.Models
 {
     public class Survey
     {
+        [Key]
         [ScaffoldColumn(false)]
         public string SurveyID { get; set; }
 
