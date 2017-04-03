@@ -1,4 +1,3 @@
-C:\github\codesign_survey_base1\src\SurveyBase1\SurveyBase1\obj\Debug\SurveyBase1.csprojResolveAssemblyReference.cache
 C:\github\codesign_survey_base1\src\SurveyBase1\SurveyBase1\bin\ApplicationInsights.config
 C:\github\codesign_survey_base1\src\SurveyBase1\SurveyBase1\bin\roslyn\csc.exe
 C:\github\codesign_survey_base1\src\SurveyBase1\SurveyBase1\bin\roslyn\csc.exe.config
